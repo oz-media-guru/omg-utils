@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <addon id="plugin.program.smartdns" version="0.0.1"
+    	name="Smart DNS" provider-name="media-guru.com.au">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary>OMG Utils</summary>
+        <description>Utilities for OzMediaGuru customers.</description>
+        <disclaimer>By using this, you take responsibility for anything that happens.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>http://media-guru.com.au/forums</forum>
+        <website>http://media-guru.com.au/</website>
+        <source></source>
+        <email></email>
+    </extension>
+</addon>
