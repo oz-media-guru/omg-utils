@@ -8,11 +8,6 @@
         <provides>executable</provides>
     </extension>
     <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.repository" name="Oz Media Guru Repo">
-        <info compressed="false">http://raw.github.com/oz-media-guru/omg-utils/master/addons.xml</info>
-		<checksum>http://raw.github.com/oz-media-guru/omg-utils/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/oz-media-guru/omg-utils/master/zips</datadir>
-  </extension>
     <extension point="xbmc.addon.metadata">
         <summary>OMG Utils</summary>
         <description>Utilities for OzMediaGuru customers.</description>
