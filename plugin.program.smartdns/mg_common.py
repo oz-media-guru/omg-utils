@@ -111,6 +111,9 @@ def addSmartDns():
             #dialog = xbmcgui.Dialog()
             #dialog.notification("Smart DNS Settings", "MG Plus: Could not add user, left on default DNS")
             return
+    elif dnsprov == '6':
+        dns1 = '8.8.4.4'
+        dns2 = '8.8.8.8'
 
 
 
