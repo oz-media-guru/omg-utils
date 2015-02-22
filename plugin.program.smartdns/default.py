@@ -1,7 +1,7 @@
 import xbmcaddon, xbmcgui,xbmc,xbmcplugin,urllib,urllib2, os, subprocess, re, sys, mg_common, os.path, tarfile
 import fcntl, socket, struct
 
-from addon.common.addon 	import Addon
+from t0mm0_common_addon 	import Addon
 
 addon_id='plugin.program.smartdns';
 addon=Addon(addon_id,sys.argv)
