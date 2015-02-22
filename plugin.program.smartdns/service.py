@@ -2,10 +2,8 @@ import xbmcaddon, xbmcgui,xbmc,xbmcplugin,urllib,urllib2, os, subprocess, re, sy
 import fcntl, socket, struct
 
 
-try: 			from addon.common.addon 	import Addon
-except:
-    try: 		from t0mm0.common.addon import Addon
-    except: from t0mm0_common_addon import Addon
+
+
 addon_id='plugin.program.smartdns';
 
 
