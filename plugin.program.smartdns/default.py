@@ -3,17 +3,17 @@ import fcntl, socket, struct
 
 from t0mm0_common_addon 	import Addon
 
-addon_id='plugin.program.smartdns';
+addon_id='plugin.program.smartdns'
 addon=Addon(addon_id,sys.argv)
 
 
-settings=xbmcaddon.Addon(id=addon_id);
+settings=xbmcaddon.Addon(id=addon_id)
 
-dnsprov=settings.getSetting('dns-provider');
+dnsprov=settings.getSetting('dns-provider')
 
-mainPath=xbmc.translatePath(os.path.join('special://home','addons',addon_id));
-fanart=xbmc.translatePath(os.path.join(mainPath,'fanart.jpg'));
-iconart=xbmc.translatePath(os.path.join(mainPath,'icon.png'));
+mainPath=xbmc.translatePath(os.path.join('special://home','addons',addon_id))
+fanart=xbmc.translatePath(os.path.join(mainPath,'fanart.jpg'))
+iconart=xbmc.translatePath(os.path.join(mainPath,'icon.png'))
 base_url='http://media-guru.com.au/'
 
 __addon__        = xbmcaddon.Addon()
@@ -24,7 +24,7 @@ __addonname__    = __addon__.getAddonInfo('name')
 
 
 
-artPath=xbmc.translatePath(os.path.join('special://home','addons',addon_id,'resources','art2/'));
+artPath=xbmc.translatePath(os.path.join('special://home','addons',addon_id,'resources','art2/'))
 
 def getArtwork(n): return xbmc.translatePath(os.path.join('special://home','addons',addon_id,'art2',n))
 def getArtworkJ(n): return xbmc.translatePath(os.path.join('special://home','addons',addon_id,'art2',n+'.jpg'))
