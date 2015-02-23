@@ -122,9 +122,9 @@ def addSmartDns():
 
 
     if (dns1=='') or (dns1=='0.0.0.0'):
-        dns1=None;
+        dns1=None
     if (dns2=='') or (dns2=='0.0.0.0'):
-        dns2=None;
+        dns2=None
 
     setupDns(dns1,dns2)
 
@@ -132,21 +132,21 @@ def addSmartDns():
 
 
 def setupDns(dns1,dns2):
-    p = subprocess.Popen(["connmanctl", "services"], stdout=subprocess.PIPE);
-    services=p.communicate()[0];
+    p = subprocess.Popen(["connmanctl", "services"], stdout=subprocess.PIPE)
+    services=p.communicate()[0]
 
-    activeServices=(re.compile('(^\*A[OR].*)', re.M).findall(services));
+    activeServices=(re.compile('(^\*A[OR].*)', re.M).findall(services))
 
     for actServ in activeServices:
-        connection=actServ.split()[2];
+        connection=actServ.split()[2]
 
 
-        p = subprocess.Popen(["connmanctl", "services", connection], stdout=subprocess.PIPE);
+        p = subprocess.Popen(["connmanctl", "services", connection], stdout=subprocess.PIPE)
 
 
-        details=p.communicate()[0];
+        details=p.communicate()[0]
 
-        currDns=(re.compile('Nameservers = \[ (.+?) \]').findall(details)[0]);
+        currDns=(re.compile('Nameservers = \[ (.+?) \]').findall(details)[0])
 
         connectionType=connection.split('_')[0]
         if connectionType=='wifi':
@@ -155,53 +155,53 @@ def setupDns(dns1,dns2):
         #dialog = xbmcgui.Dialog();
         #dialog.notification("IP details - "+connectionType, currDns);
 
-        eachDns = currDns.split(', ');
-        totalDns = len(eachDns);
+        eachDns = currDns.split(', ')
+        totalDns = len(eachDns)
 
-        updatedns1=False;
-        updatedns2=False;
-        reset=False;
+        updatedns1=False
+        updatedns2=False
+        reset=False
 
         if dns1 is None and dns2 is None:
-            reset=True;
+            reset=True
         elif totalDns==1:
             if (not dns1 is None) and (dns2 is None):
                 if not dns1==eachDns[0].strip():
-                    updatedns1=True;
+                    updatedns1=True
             else:
-                updatedns1=True;
-                updatedns2=True;
+                updatedns1=True
+                updatedns2=True
         elif totalDns==2:
             if (not dns1==eachDns[0].strip()) or (not dns2==eachDns[1].strip()):
                     updatedns1=True
                     if not dns2 is None:
-                        updatedns2=True;
+                        updatedns2=True
         else:
             updatedns1=True
             if not dns2 is None:
-                updatedns2=True;
+                updatedns2=True
 
 
         if reset:
-            p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers"], stdout=subprocess.PIPE);
-            dialog = xbmcgui.Dialog();
-            dialog.notification("Smart DNS Settings - "+connectionType, "Cleared settings to default.");
+            p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers"], stdout=subprocess.PIPE)
+            dialog = xbmcgui.Dialog()
+            dialog.notification("Smart DNS Settings - "+connectionType, "Cleared settings to default.")
         elif updatedns1 and not updatedns2:
-            p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers", dns1], stdout=subprocess.PIPE);
-            dialog = xbmcgui.Dialog();
+            p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers", dns1], stdout=subprocess.PIPE)
+            dialog = xbmcgui.Dialog()
             if dnsprov == '4':
-                dialog.notification("Smart DNS Settings - "+connectionType, "Updated... MG Plus DNS set");
+                dialog.notification("Smart DNS Settings - "+connectionType, "Updated... MG Plus DNS set")
             else:
-                dialog.notification("Smart DNS Settings - "+connectionType, "Updated... Now set to: "+dns1);
+                dialog.notification("Smart DNS Settings - "+connectionType, "Updated... Now set to: "+dns1)
         elif updatedns1 and updatedns2:
-            print ("conn: "+connection);
-            print(" dns1:"+dns1);
-            print(" dns2: "+dns2);
-            p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers", dns1, dns2], stdout=subprocess.PIPE);
-            dialog = xbmcgui.Dialog();
-            dialog.notification("Smart DNS Settings - "+connectionType, "Updated... Now set to: "+dns1+" and "+dns2);
+            print ("conn: "+connection)
+            print(" dns1:"+dns1)
+            print(" dns2: "+dns2)
+            p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers", dns1, dns2], stdout=subprocess.PIPE)
+            dialog = xbmcgui.Dialog()
+            dialog.notification("Smart DNS Settings - "+connectionType, "Updated... Now set to: "+dns1+" and "+dns2)
         else:
-            dialog = xbmcgui.Dialog();
-            dialog.notification("Smart DNS Settings - "+connectionType, "No changes required - already set");
+            dialog = xbmcgui.Dialog()
+            dialog.notification("Smart DNS Settings - "+connectionType, "No changes required - already set")
 
 
