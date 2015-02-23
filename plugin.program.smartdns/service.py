@@ -4,19 +4,19 @@ import fcntl, socket, struct
 
 
 
-addon_id='plugin.program.smartdns';
+addon_id='plugin.program.smartdns'
 
 
 
-settings=xbmcaddon.Addon(id=addon_id);
+settings=xbmcaddon.Addon(id=addon_id)
 
-dnsprov=settings.getSetting('dns-provider');
+dnsprov=settings.getSetting('dns-provider')
 
 
 
-mainPath=xbmc.translatePath(os.path.join('special://home','addons',addon_id));
-fanart=xbmc.translatePath(os.path.join(mainPath,'fanart.jpg')); #fanart=artPath+'fanart.jpg'; #fanart=xbmc.translatePath(os.path.join('special://home','addons',addon_id+'/'))+'fanart.jpg'; #fanart=getArtworkJ('fanart')
-iconart=xbmc.translatePath(os.path.join(mainPath,'icon.png')); #print ['fanart',fanart,'iconart',iconart];
+mainPath=xbmc.translatePath(os.path.join('special://home','addons',addon_id))
+fanart=xbmc.translatePath(os.path.join(mainPath,'fanart.jpg'))
+iconart=xbmc.translatePath(os.path.join(mainPath,'icon.png'))
 base_url='http://media-guru.com.au/'
 
 __addon__        = xbmcaddon.Addon()
