@@ -1,2 +1,4 @@
+V0.0.3
+Updated so can apply DNS from settings screen
 V0.0.1
 Initial Release

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-    <addon id="plugin.program.smartdns" version="0.0.2"
+    <addon id="plugin.program.smartdns" version="0.0.3"
     	name="OMG Utilities" provider-name="media-guru.com.au">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
