@@ -115,8 +115,12 @@ if mode==None or url==None or len(url)<1: MAININDEX()
 try:
 	if url: print url
 except: pass
-if   mode=='settings':  			addon.show_settings()																		# Settings
-elif mode=='smartdns': 			    mg_common.addSmartDns()
+if   mode=='settings':
+    addon.show_settings()																		# Settings
+    MAININDEX()
+elif mode=='smartdns':
+    mg_common.addSmartDns()
+    MAININDEX()
 elif mode=='backup': 			    backupMenu()
 elif mode=='restore': 			    restoreMenu()
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
