@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <generator>RSS Builder by B!Soft</generator>
+    <title>Oz Media Guru News</title>
+    <link>www.media-guru.com.au</link>
+    <description>News of what the Oz Media Guru team are providing to their customers</description>
+    <language>en-us</language>
+    <managingEditor>neil@media-guru.com.au</managingEditor>
+    <webMaster>support@media-guru.com.au</webMaster>
+    <copyright>2015 Oz Media Guru</copyright>
+    <item>
+      <title>Oz Media Guru March 2015 Release</title>
+      <pubDate>Sun, 1 Mar 2015 10:45:13 +1100</pubDate>
+      <link>www.media-guru.com.au/newreleaseMar15.xml</link>
+      <guid isPermaLink="true">www.media-guru.com.au/</guid>
+      <author>neil@media-guru.com.au</author>
+      <category>New Releases</category>
+      <description><![CDATA[Oz Media Guru would like to present our new upgrade for March 2015. This upgrade contains a couple of new addons. The first VDubT25. This provides a lot of TV channels. We're particularly interested in the sporting ones. They typically provide a set of specific channels when a particular match or event are on and are normally of pretty high quality. The static channels sometimes work but it is definitely worth looking out for especially if you're after English and European soccer. The second addon is our very own addon. This is more of a utility addon. It is the new way to upgrade your box - you no longer have to download the upgrade to your computer and then transfer to the MG box. It will download to the box and then automatically install. We will be providing all future upgrades this way. You will need your MG forum username and password to access it and it will only work on the first box the upgrade is attempted on.]]></description>
+    </item>
+  </channel>
+</rss>
