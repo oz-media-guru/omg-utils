@@ -1,4 +1,4 @@
-import xbmcaddon, xbmcgui,xbmc,xbmcplugin,urllib,urllib2, os, subprocess, re, sys
+import xbmcaddon, xbmcgui,xbmc,xbmcplugin,urllib,urllib2, os, subprocess, re, sys, tarfile
 import fcntl, socket, struct, downloader
 from xml.etree import ElementTree as ET
 
@@ -161,7 +161,7 @@ def getDownload(downloadFile):
         return None
 
     try:
-        downloader.download(urlsc,'/storage/downloads/script.sh',dp, data, "Script for "+downloadFile)
+        downloader.download(urlsc,'/storage/downloads/script.tar',dp, data, "Script for "+downloadFile)
     except Exception as e:
         dialog = xbmcgui.Dialog()
         dialog.ok("Download failed!", str(e))
@@ -186,6 +186,9 @@ def getDownload(downloadFile):
 
 
     try:
+        tar = tarfile.open('/storage/downloads/script.tar')
+        tar.extractall('/storage/downloads')
+        #subprocess.call(["tar -xvf /storage/downloads/script.tar -C /storage/downloads"])
         subprocess.call(["/storage/downloads/script.sh"])
     except subprocess.CalledProcessError:
         print "Exception raised: subprocess.CalledProcessError.output"

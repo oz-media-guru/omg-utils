@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37eba873-7f84-4992-8edf-3c82d538b6c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zips/plugin.program.smartdns/plugin.program.smartdns-0.0.7.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" afterPath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml.md5" afterPath="$PROJECT_DIR$/addons.xml.md5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml" afterPath="$PROJECT_DIR$/addons.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" afterPath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" afterPath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="omg-utils.iws" />
@@ -25,70 +31,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="restore.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/art2/restore.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/art2/settings.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateDNS.jpg" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/art2/updateDNS.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/service.py">
+      <file leaf-file-name="downloader.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="0" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/default.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="15" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2244">
+            <state line="34" column="0" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
               <folding>
-                <element signature="e#0#130#0" expanded="true" />
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1425115540581" expanded="true" signature="71:534" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update_smart_dns.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/update_smart_dns.py">
+      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/resources/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="238">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addon.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/addon.xml">
+      <file leaf-file-name="addons.xml.md5" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons.xml.md5">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="54" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addons_xml_generator.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addons_xml_generator.py">
+      <file leaf-file-name="fanart.jpg" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repository.mediaguru/fanart.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icon.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repository.mediaguru/icon.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addons.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="35" selection-start="2859" selection-end="2859" vertical-scroll-proportion="0.025373135" vertical-offset="1207" max-vertical-offset="1989">
+            <state line="24" column="70" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.6089552" vertical-offset="0" max-vertical-offset="731">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_db_paths.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/add_db_paths.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="33" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <folding>
+                <marker date="1425185766026" expanded="true" signature="227:1259" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,16 +98,25 @@
       <file leaf-file-name="changelog.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/changelog.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="45" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+            <state line="1" column="29" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/resources/settings.xml">
+      <file leaf-file-name="addon.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repository.mediaguru/addon.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="11" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+            <state line="1" column="71" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="media-guru.rss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rss/media-guru.rss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="6" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -125,13 +136,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/addons_xml_generator.py" />
-        <option value="$PROJECT_DIR$/plugin.program.smartdns/resources/settings.xml" />
-        <option value="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
         <option value="$PROJECT_DIR$/plugin.program.smartdns/service.py" />
         <option value="$PROJECT_DIR$/plugin.program.smartdns/update_smart_dns.py" />
+        <option value="$PROJECT_DIR$/plugin.program.smartdns/downloader.py" />
+        <option value="$PROJECT_DIR$/rss/media-guru.rss" />
+        <option value="$PROJECT_DIR$/repository.mediaguru/addon.xml" />
+        <option value="$PROJECT_DIR$/plugin.program.smartdns/resources/settings.xml" />
         <option value="$PROJECT_DIR$/plugin.program.smartdns/default.py" />
-        <option value="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
+        <option value="$PROJECT_DIR$/plugin.program.smartdns/add_db_paths.py" />
+        <option value="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
         <option value="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
+        <option value="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
       </list>
     </option>
   </component>
@@ -250,6 +265,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="repository.mediaguru" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omg-utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omg-utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="plugin.program.smartdns" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -269,6 +298,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omg-utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="omg-utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plugin.program.smartdns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="art2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,6 +351,11 @@
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\neil\Documents\OMGsrc\omg-utils\plugin.program.smartdns" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.addons_xml_generator">
     <configuration default="false" name="addons_xml_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -500,7 +552,67 @@
       <created>1424897002201</created>
       <updated>1424897002201</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added so can apply from settings page and removed screens that showed two dots">
+      <created>1424897024771</created>
+      <updated>1424897024771</updated>
+    </task>
+    <task id="LOCAL-00007" summary="RSS feed added">
+      <created>1425167739423</created>
+      <updated>1425167739423</updated>
+    </task>
+    <task id="LOCAL-00008" summary="RSS feed added">
+      <created>1425168524603</created>
+      <updated>1425168524603</updated>
+    </task>
+    <task id="LOCAL-00009" summary="RSS feed added">
+      <created>1425168634675</created>
+      <updated>1425168634675</updated>
+    </task>
+    <task id="LOCAL-00010" summary="RSS feed added">
+      <created>1425170734163</created>
+      <updated>1425170734163</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Updates to include upgrade">
+      <created>1425171287343</created>
+      <updated>1425171287343</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Updates to include upgrade">
+      <created>1425171315462</created>
+      <updated>1425171315462</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Updates to include upgrade">
+      <created>1425171341833</created>
+      <updated>1425171341833</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Updates to include upgrade">
+      <created>1425171510269</created>
+      <updated>1425171510269</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fix to settings to apply directly from there">
+      <created>1425179420218</created>
+      <updated>1425179420218</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fix to settings to apply directly from there">
+      <created>1425179538380</created>
+      <updated>1425179538380</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Fix to settings to apply directly from there">
+      <created>1425179799327</created>
+      <updated>1425179799327</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Fix to settings to apply directly from there">
+      <created>1425179838386</created>
+      <updated>1425179838386</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Fix to support to DNS IP's for MG Plus">
+      <created>1425206656496</created>
+      <updated>1425206656496</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Fix to support to DNS IP's for MG Plus">
+      <created>1425206684921</created>
+      <updated>1425206684921</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -515,16 +627,16 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32990655" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990655" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32990655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -542,7 +654,11 @@
     </option>
     <MESSAGE value="Cleanup code" />
     <MESSAGE value="Added so can apply from settings page and removed screens that showed two dots" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added so can apply from settings page and removed screens that showed two dots" />
+    <MESSAGE value="RSS feed added" />
+    <MESSAGE value="Updates to include upgrade" />
+    <MESSAGE value="Fix to settings to apply directly from there" />
+    <MESSAGE value="Fix to support to DNS IP's for MG Plus" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix to support to DNS IP's for MG Plus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -550,15 +666,12 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/art2/backup.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/mg_common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3621">
-          <folding />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -587,9 +700,7 @@
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/default.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="121" column="15" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2244">
-          <folding>
-            <element signature="e#0#130#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -632,7 +743,9 @@
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/mg_common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="207" column="0" selection-start="6230" selection-end="6230" vertical-scroll-proportion="0.0" vertical-offset="3519" max-vertical-offset="3621">
-          <folding />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -687,9 +800,7 @@
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/default.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="2176">
-          <folding>
-            <element signature="e#0#130#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +812,9 @@
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/mg_common.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="116" column="0" selection-start="3226" selection-end="3226" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="3621">
-          <folding />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -726,30 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/resources/settings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="11" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="70" selection-start="1118" selection-end="1143" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/fanart.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/art2/backup.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -770,6 +859,23 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/fanart.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/service.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="0" selection-start="1396" selection-end="1396" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1071">
@@ -777,46 +883,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/mg_common.py">
+    <entry file="file://$PROJECT_DIR$/rss/media-guru.rss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3621">
+        <state line="27" column="6" selection-start="2145" selection-end="2145" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/resources/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/downloader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1425115540581" expanded="true" signature="71:534" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons.xml.md5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository.mediaguru/addon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="71" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository.mediaguru/fanart.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository.mediaguru/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/resources/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="109" selection-start="551" selection-end="597" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/add_db_paths.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="33" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <marker date="1425185766026" expanded="true" signature="227:1259" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/update_smart_dns.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.025373135" vertical-offset="0" max-vertical-offset="670">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/default.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="15" selection-start="5364" selection-end="5364" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="2244">
+        <state line="54" column="38" selection-start="2301" selection-end="2374" vertical-scroll-proportion="1.3972603" vertical-offset="0" max-vertical-offset="2754">
           <folding>
             <element signature="e#0#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/addon.xml">
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/mg_common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="54" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
+        <state line="160" column="4" selection-start="5024" selection-end="5024" vertical-scroll-proportion="0.0" vertical-offset="2482" max-vertical-offset="5712">
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/changelog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="45" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+        <state line="1" column="29" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/addon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="54" selection-start="110" selection-end="110" vertical-scroll-proportion="0.025373135" vertical-offset="0" max-vertical-offset="670">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons_xml_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="35" selection-start="2859" selection-end="2859" vertical-scroll-proportion="0.025373135" vertical-offset="1207" max-vertical-offset="1989">
+        <state line="95" column="73" selection-start="3801" selection-end="3801" vertical-scroll-proportion="0.94328356" vertical-offset="966" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="70" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.6089552" vertical-offset="0" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
