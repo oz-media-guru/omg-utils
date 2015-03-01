@@ -1,9 +1,13 @@
 <settings>
 	<category label="DNS Nameserver settings">
-        <setting visible="true" id="dns-provider" label="DNS Provider" type="enum" values="UnoDNS (Sydney)|UnoDNS (Brisbane)|UnoDNS (Perth)|Custom|MG Plus|None|Google" default="None"/>
+        <setting visible="true" id="dns-provider" label="DNS Provider" type="enum" values="UnoDNS (Sydney)|UnoDNS (Brisbane)|UnoDNS (Perth)|Custom|MG Plus|None|Google" default="5"/>
 		<setting visible="true" enable="eq(-1,3)" id="dns-serv-ip-1" type="ipaddress" label="DNS Server IP 1" default="0.0.0.0"/>
     	<setting visible="true" enable="eq(-2,3)" id="dns-serv-ip-2" type="ipaddress" label="DNS Server IP 2" default="0.0.0.0"/>
-        <setting visible="true" enable="eq(-3,4)" id="mg-username" type="text" label="MG Username"/>
-        <setting visible="true" enable="eq(-4,4)" id="mg-password" type="text" option="hidden" label="MG Password"/>
+        <setting label="Apply" type="action" action="RunScript(special://home/addons/plugin.program.smartdns/update_smart_dns.py)" option="close" />
+        <setting label="Note: When selecting MG Plus, you need to enter details in next tab" id="notreq" enable="false" type="bool" />
+	</category>
+    <category label="OMG Forum Login Details">
+        <setting visible="true" id="mg-username" type="text" label="MG Username"/>
+        <setting visible="true" id="mg-password" type="text" option="hidden" label="MG Password"/>
 	</category>
 </settings>
