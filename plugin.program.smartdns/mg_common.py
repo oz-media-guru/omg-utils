@@ -1,5 +1,6 @@
 import xbmcaddon, xbmcgui,xbmc,xbmcplugin,urllib,urllib2, os, subprocess, re, sys
-import fcntl, socket, struct
+import fcntl, socket, struct, downloader
+from xml.etree import ElementTree as ET
 
 addon_id='plugin.program.smartdns'
 
@@ -8,6 +9,16 @@ addon_id='plugin.program.smartdns'
 settings=xbmcaddon.Addon(id=addon_id)
 
 dnsprov=settings.getSetting('dns-provider')
+
+class MyClass(xbmcgui.Window):
+    def __init__(self):
+        self.strActionFade = xbmcgui.ControlFadeLabel(100, 300, 400, 200, 'font24', '0xFFFFFF00')
+        self.addControl(self.strActionFade)
+        self.strActionFade.addLabel('XBMC Upgrading ... This will take a few minutes.')
+        self.strActionFade1 = xbmcgui.ControlFadeLabel(100, 500, 600, 200, 'font24', '0xFFFFFF00')
+        self.addControl(self.strActionFade1)
+        self.strActionFade1.addLabel('DO NOT unplug whilst upgrading as it will damage the box.')
+
 
 
 
@@ -82,7 +93,102 @@ def updateMGServers():
         dialog.notification("Smart DNS Settings", "Error: "+the_page)
         return None
 
+def getAvailableDownloads():
+    print "getAvailableDownloads"
+    mac = getHwAddr("eth0")
+    print "mac: "+mac
+    username = settings.getSetting('mg-username')
+    password = settings.getSetting('mg-password')
+    url = 'http://www.media-guru.com.au/getavailabledownloads.php'
+    values = {'username' : username,
+          'password' : password,
+          'macaddr' : mac }
 
+    data = urllib.urlencode(values)
+    req = urllib2.Request(url, data)
+    response = urllib2.urlopen(req)
+    the_page = response.read()
+
+    print the_page
+    try:
+        root = ET.fromstring(the_page)
+        return root
+    except:
+
+        dialog = xbmcgui.Dialog()
+        dialog.notification("Upgrade", "Error: "+the_page)
+        return None
+
+
+def getDownload(downloadFile):
+    print "getDownload"
+    mac = getHwAddr("eth0")
+    print "mac: "+mac
+
+    username = settings.getSetting('mg-username')
+    while username == "":
+        dialog = xbmcgui.Dialog()
+        dialog.ok("Missing username!", "Please enter a forum username in the settings page")
+        settings.show_settings()
+    #password = settings.getSetting('mg-password')
+        username = settings.getSetting('mg-username')
+
+
+    dialog = xbmcgui.Dialog()
+    password = dialog.input('Enter MG forum password for: '+username, type=xbmcgui.INPUT_ALPHANUM, option=xbmcgui.ALPHANUM_HIDE_INPUT)
+
+
+    url = 'http://www.media-guru.com.au/getdownload.php'
+    urlsc = 'http://www.media-guru.com.au/getscript.php'
+    values = {'username' : username,
+          'password' : password,
+          'macaddr' : mac,
+          'download' : downloadFile}
+    data = urllib.urlencode(values)
+
+    dp=xbmcgui.DialogProgress();
+    dp.create("Downloading upgrade:","New file downloading...");
+    try:
+        downloader.download(url,'/storage/downloads/'+downloadFile+".tar",dp, data, downloadFile)
+
+    except Exception as e:
+        dialog = xbmcgui.Dialog()
+        dialog.ok("Download failed!", str(e))
+        return None
+
+    try:
+        downloader.download(urlsc,'/storage/downloads/script.sh',dp, data, "Script for "+downloadFile)
+    except Exception as e:
+        dialog = xbmcgui.Dialog()
+        dialog.ok("Download failed!", str(e))
+        return None
+
+
+    file = open("/storage/downloads/upgfile", "w")
+    file.write(downloadFile+".tar")
+    file.close()
+
+    dialog = xbmcgui.Dialog()
+    ok = dialog.ok('Upgrade Files Downloaded', 'On selecting OK, XBMC/Kodi will appear to hang. It will be upgrading. This can take around 5 minutes and it will automatically restart - DO NOT pull out plug while upgrading as this will damage your box.')
+
+    #p = subprocess.Popen(["chmod", "ugo+x", "/storage/downloads/script.sh"], stdout=subprocess.PIPE)
+    #dialog = xbmcgui.Dialog()
+    #dialog.notification("Upgrading", "Please wait whilst your box is being upgraded...")
+    #xbmc.sleep(500)
+
+    mydisplay = MyClass()
+    #mydisplay.doModal()
+    mydisplay.show()
+
+
+    try:
+        subprocess.call(["/storage/downloads/script.sh"])
+    except subprocess.CalledProcessError:
+        print "Exception raised: subprocess.CalledProcessError.output"
+
+    del mydisplay
+
+    return None
 
 
 

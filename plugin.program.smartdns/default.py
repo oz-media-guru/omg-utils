@@ -42,6 +42,7 @@ def MAININDEX():
     addDir('SMART DNS Settings','none','settings',getArtworkJ('settings'))
     addDir('Backup Menu Setup','none','backup',getArtworkJ('backup'))
     addDir('Restore Menu Setup','none','restore',getArtworkJ('restore'))
+    addDir('Upgrade MG','none','download',getArtworkJ('upgrades'))
 
     AUTO_VIEW('')
 
@@ -74,21 +75,43 @@ def restoreMenu():
 def AUTO_VIEW(content='',viewmode=''): # Set View
      viewmode=str(viewmode); content=str(content);
      if len(viewmode)==0:
-         if settings.getSetting('auto-view')=='true':
-             if content=='addons':  viewmode=settings.getSetting('addon-view')
-             else:                  viewmode=settings.getSetting('default-view')
-         else: viewmode='500'
+         viewmode='500'
      if len(content) > 0: xbmcplugin.setContent(int(sys.argv[1]),str(content))
      #if settings.getSetting('auto-view')=='true': xbmc.executebuiltin("Container.SetViewMode(%s)" % str(viewmode))
      if len(viewmode) > 0: xbmc.executebuiltin("Container.SetViewMode(%s)" % str(viewmode))
 # HELPDIR**************************************************************
 def addDir(name,url,mode,thumb):
-        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name); ok=True;
-        liz=xbmcgui.ListItem(name,iconImage=iconart,thumbnailImage=thumb);
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name); ok=True
+        liz=xbmcgui.ListItem(name,iconImage=iconart,thumbnailImage=thumb)
         #liz.setInfo(type="Video",infoLabels={"title":name,"Plot":description})
         try: liz.setProperty("fanart_image",fanart)
         except: pass
         ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True); return ok
+
+def addDownloadDir(name,url,mode,iconimage,description,contextmenuitems=[],contextreplace=False):
+        u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&iconimage="+urllib.quote_plus(iconimage)+"&description="+urllib.quote_plus(description);  ok=True;
+        liz=xbmcgui.ListItem(name,iconImage=iconart,thumbnailImage=iconimage) #"DefaultFolder.png"
+        #if len(contextmenuitems) > 0:
+        liz.addContextMenuItems(contextmenuitems,replaceItems=contextreplace)
+        liz.setInfo(type="Video",infoLabels={"title":name,"plot":description})
+        liz.setProperty("Addon.Description",description)
+        #properties={'Addon.Description':meta["plot"]}
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=False); return ok
+
+def getDownloads():
+    root = mg_common.getAvailableDownloads()
+
+    if not root is None:
+        for download in root.findall('download'):
+            name = download.find('name').text
+            desc = download.find('description').text
+            url_file_name = download.find('url_name').text
+            #addDownloadDir(name,url_file_name,'downloadFile',getArtworkJ('restore'),desc)
+            addDir(name,url_file_name,'downloadFile',getArtworkJ('boxUpgrade'))
+        AUTO_VIEW('infowall','51')
+
+def getDownloadFile():
+    mg_common.getDownload(url)
 
 def get_params():
     param=[]; paramstring=sys.argv[2]
@@ -123,4 +146,6 @@ elif mode=='smartdns':
     MAININDEX()
 elif mode=='backup': 			    backupMenu()
 elif mode=='restore': 			    restoreMenu()
+elif mode=='download': 			    getDownloads()
+elif mode=='downloadFile':          getDownloadFile()
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
