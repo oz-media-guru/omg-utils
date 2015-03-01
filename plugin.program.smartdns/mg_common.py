@@ -85,13 +85,17 @@ def updateMGServers():
     response = urllib2.urlopen(req)
     the_page = response.read()
     dialog = xbmcgui.Dialog()
+    ip_list = the_page.strip().split('|')
+    for ip_addr in ip_list:
+        if not is_valid_ipv4(ip_addr):
+            dialog = xbmcgui.Dialog()
+            dialog.notification("Smart DNS Settings", "Error: "+the_page)
+            return None
+    return ip_list
 
-    if is_valid_ipv4(the_page.strip()):
-        return the_page.strip()
-    else:
-        dialog = xbmcgui.Dialog()
-        dialog.notification("Smart DNS Settings", "Error: "+the_page)
-        return None
+
+
+
 
 def getAvailableDownloads():
     print "getAvailableDownloads"
@@ -211,8 +215,15 @@ def addSmartDns():
     elif dnsprov == '4':
         setupDns(None,None)
 
-        dns2 = None
-        dns1 = updateMGServers()
+        #dns2 = None
+        dnslist = updateMGServers()
+        if len(dnslist) == 1:
+            dns1 = dnslist[0]
+            dns2 = None
+        elif len(dnslist) == 2:
+            dns1 = dnslist[0]
+            dns2 = dnslist[1]
+
         if dns1 is None:
             #dialog = xbmcgui.Dialog()
             #dialog.notification("Smart DNS Settings", "MG Plus: Could not add user, left on default DNS")
@@ -305,7 +316,10 @@ def setupDns(dns1,dns2):
             print(" dns2: "+dns2)
             p = subprocess.Popen(["connmanctl", "config", connection, "--nameservers", dns1, dns2], stdout=subprocess.PIPE)
             dialog = xbmcgui.Dialog()
-            dialog.notification("Smart DNS Settings - "+connectionType, "Updated... Now set to: "+dns1+" and "+dns2)
+            if dnsprov == '4':
+                dialog.notification("Smart DNS Settings - "+connectionType, "Updated... MG Plus DNS set")
+            else:
+                dialog.notification("Smart DNS Settings - "+connectionType, "Updated... Now set to: "+dns1+" and "+dns2)
         else:
             dialog = xbmcgui.Dialog()
             dialog.notification("Smart DNS Settings - "+connectionType, "No changes required - already set")

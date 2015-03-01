@@ -1,5 +1,5 @@
 import xbmcaddon, xbmcgui,xbmc,xbmcplugin,urllib,urllib2, os, subprocess, re, sys, mg_common, os.path, tarfile, t0mm0_common_addon
-import fcntl, socket, struct
+import fcntl, socket, struct, add_db_paths
 
 from t0mm0_common_addon 	import Addon
 
@@ -43,6 +43,7 @@ def MAININDEX():
     addDir('Backup Menu Setup','none','backup',getArtworkJ('backup'))
     addDir('Restore Menu Setup','none','restore',getArtworkJ('restore'))
     addDir('Upgrade MG','none','download',getArtworkJ('upgrades'))
+    addDir('DB Path Fix', 'none', 'dbpathfix',getArtworkJ('dbpathfix'))
 
     AUTO_VIEW('')
 
@@ -148,4 +149,8 @@ elif mode=='backup': 			    backupMenu()
 elif mode=='restore': 			    restoreMenu()
 elif mode=='download': 			    getDownloads()
 elif mode=='downloadFile':          getDownloadFile()
+elif mode=='dbpathfix':
+    add_db_paths.run()
+    MAININDEX()
+
 xbmcplugin.endOfDirectory(int(sys.argv[1]))
