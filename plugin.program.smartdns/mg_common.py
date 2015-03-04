@@ -141,6 +141,9 @@ def getDownload(downloadFile):
     dialog = xbmcgui.Dialog()
     password = dialog.input('Enter MG forum password for: '+username, type=xbmcgui.INPUT_ALPHANUM, option=xbmcgui.ALPHANUM_HIDE_INPUT)
 
+    if not os.path.exists("/storage/downloads"):
+        os.makedirs("/storage/downloads")
+
 
     url = 'http://www.media-guru.com.au/getdownload.php'
     urlsc = 'http://www.media-guru.com.au/getscript.php'
