@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37eba873-7f84-4992-8edf-3c82d538b6c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin.program.smartdns/art2/OMGUpgradeWarning.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zips/plugin.program.smartdns/plugin.program.smartdns-0.0.9.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" afterPath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml.md5" afterPath="$PROJECT_DIR$/addons.xml.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml" afterPath="$PROJECT_DIR$/addons.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" afterPath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/default.py" afterPath="$PROJECT_DIR$/plugin.program.smartdns/default.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" afterPath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="omg-utils.iws" />
@@ -590,7 +582,11 @@
       <created>1425504370174</created>
       <updated>1425504370174</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Fix for downloads directory">
+      <created>1425695690917</created>
+      <updated>1425695690917</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="ToolWindowManager">
