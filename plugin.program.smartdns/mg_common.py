@@ -13,11 +13,7 @@ dnsprov=settings.getSetting('dns-provider')
 class MyClass(xbmcgui.Window):
     def __init__(self):
         self.strActionFade = xbmcgui.ControlFadeLabel(100, 300, 400, 200, 'font24', '0xFFFFFF00')
-        self.addControl(self.strActionFade)
-        self.strActionFade.addLabel('XBMC Upgrading ... This will take a few minutes.')
-        self.strActionFade1 = xbmcgui.ControlFadeLabel(100, 500, 600, 200, 'font24', '0xFFFFFF00')
-        self.addControl(self.strActionFade1)
-        self.strActionFade1.addLabel('DO NOT unplug whilst upgrading as it will damage the box.')
+        self.addControl(xbmcgui.ControlImage(250,150,720,565, xbmc.translatePath(os.path.join('special://home','addons',addon_id,'art2','OMGUpgradeWarning.jpg'))))
 
 
 

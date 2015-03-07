@@ -43,7 +43,7 @@ def MAININDEX():
     addDir('Backup Menu Setup','none','backup',getArtworkJ('backup'))
     addDir('Restore Menu Setup','none','restore',getArtworkJ('restore'))
     addDir('Upgrade MG','none','download',getArtworkJ('upgrades'))
-    addDir('DB Path Fix', 'none', 'dbpathfix',getArtworkJ('dbpathfix'))
+    #addDir('DB Path Fix', 'none', 'dbpathfix',getArtworkJ('dbpathfix'))
 
     AUTO_VIEW('')
 
