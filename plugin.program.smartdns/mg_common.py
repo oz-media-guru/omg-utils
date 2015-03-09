@@ -99,10 +99,32 @@ def getAvailableDownloads():
     print "mac: "+mac
     username = settings.getSetting('mg-username')
     password = settings.getSetting('mg-password')
+
+    p = subprocess.Popen(["cat", "/proc/cpuinfo", "|", "grep","Hardware"], stdout=subprocess.PIPE)
+    model=p.communicate()[0]
+    model_ver=""
+    if 'MX2' in model:
+        model_ver = 'MG2'
+    elif 'Meson8' in model:
+        model_ver = 'MG8'
+
+    p = subprocess.Popen(["uname", "-a"], stdout=subprocess.PIPE)
+    os=p.communicate()[0]
+    os_ver=""
+    if 'OpenELEC 3.0.101' in os:
+        os_ver = '13.1'
+    elif 'OpenELEC 3.10.61' in os:
+        os_ver = '13.2'
+
+    print ('os_ver: '+os_ver)
+    print ('model_ver: '+model_ver)
+
     url = 'http://www.media-guru.com.au/getavailabledownloads.php'
     values = {'username' : username,
           'password' : password,
-          'macaddr' : mac }
+          'macaddr' : mac,
+          'model' : model_ver,
+          'os': os_ver}
 
     data = urllib.urlencode(values)
     req = urllib2.Request(url, data)

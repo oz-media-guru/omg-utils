@@ -1,3 +1,5 @@
+V0.1
+Added Gotham Rebuild and allow multiple boxes on one account
 V0.0.9
 Removed DB Fix until ready
 V0.0.8
