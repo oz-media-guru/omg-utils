@@ -348,6 +348,9 @@ def setupDns(dns1,dns2):
             dialog = xbmcgui.Dialog()
             dialog.notification("Smart DNS Settings - "+connectionType, "No changes required - already set")
 
+        p = subprocess.Popen(["cat", "/proc/cpuinfo", "|", "grep","Hardware"], stdout=subprocess.PIPE)
+        model=p.communicate()[0]
 
-        p = subprocess.Popen(["/usr/sbin/ntpdate", "pool.ntp.org", connection], stdout=subprocess.PIPE)
-        details=p.communicate()[0]
+        if 'MX2' in model:
+            p = subprocess.Popen(["/usr/sbin/ntpdate", "pool.ntp.org", connection], stdout=subprocess.PIPE)
+            details=p.communicate()[0]
