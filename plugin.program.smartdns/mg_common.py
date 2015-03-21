@@ -114,7 +114,7 @@ def getAvailableDownloads():
     if 'OpenELEC 3.0.101' in os:
         os_ver = '13.1'
     elif 'OpenELEC 3.10.61' in os:
-        os_ver = '13.2'
+        os_ver = '14.1'
 
     print ('os_ver: '+os_ver)
     print ('model_ver: '+model_ver)
@@ -349,3 +349,5 @@ def setupDns(dns1,dns2):
             dialog.notification("Smart DNS Settings - "+connectionType, "No changes required - already set")
 
 
+        p = subprocess.Popen(["/usr/sbin/ntpdate", "pool.ntp.org", connection], stdout=subprocess.PIPE)
+        details=p.communicate()[0]
