@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37eba873-7f84-4992-8edf-3c82d538b6c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zips/plugin.program.smartdns/plugin.program.smartdns-0.4.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" afterPath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml.md5" afterPath="$PROJECT_DIR$/addons.xml.md5" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml" afterPath="$PROJECT_DIR$/addons.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" afterPath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" afterPath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="omg-utils.iws" />
@@ -601,7 +595,11 @@
       <created>1426927233687</created>
       <updated>1426927233687</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Fixed to work with Kodi">
+      <created>1427587509377</created>
+      <updated>1427587509377</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -653,7 +651,8 @@
     <MESSAGE value="Added sports update into RSS" />
     <MESSAGE value="Fixed date time issue" />
     <MESSAGE value="Fixed date time issue (disabled on M8)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed date time issue (disabled on M8)" />
+    <MESSAGE value="Fixed to work with Kodi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed to work with Kodi" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
