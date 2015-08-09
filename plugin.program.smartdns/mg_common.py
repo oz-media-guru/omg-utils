@@ -115,6 +115,8 @@ def getAvailableDownloads():
         os_ver = '13.1'
     elif 'OpenELEC 3.10.61' in os:
         os_ver = '14.1'
+    elif 'OpenELEC 3.10.76' in os:
+        os_ver = '15.0'
 
     print ('os_ver: '+os_ver)
     print ('model_ver: '+model_ver)
