@@ -105,6 +105,8 @@ def getAvailableDownloads():
     model_ver=""
     if 'MX2' in model:
         model_ver = 'MG2'
+    elif 'Meson6' in model:
+        model_ver = 'MG2'
     elif 'Meson8' in model:
         model_ver = 'MG8'
 

@@ -1,7 +1,9 @@
-V0.4
-Fix to work with Kodi
+V0.6
+Stop MG8 upgrade options showing on MX2 with Kodi 14
 V0.5
 Support Kodi 15.0
+V0.4
+Fix to work with Kodi
 V0.3
 Timedate fix didn't work on M8, disabled for M8
 V0.2

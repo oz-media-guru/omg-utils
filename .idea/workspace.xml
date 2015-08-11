@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37eba873-7f84-4992-8edf-3c82d538b6c0" name="Default" comment="">
+    <list default="true" id="37eba873-7f84-4992-8edf-3c82d538b6c0" name="Default" comment="New August 2015 Upgrade">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/zips/plugin.program.smartdns/plugin.program.smartdns-0.6.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" afterPath="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml.md5" afterPath="$PROJECT_DIR$/addons.xml.md5" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addons.xml" afterPath="$PROJECT_DIR$/addons.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" afterPath="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" afterPath="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="omg-utils.iws" />
@@ -69,19 +75,10 @@
       <file leaf-file-name="add_db_paths.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/add_db_paths.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="33" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="223" max-vertical-offset="612">
+            <state line="23" column="33" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding>
                 <marker date="1425185766026" expanded="true" signature="227:1259" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="changelog.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/changelog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="17" selection-start="49" selection-end="49" vertical-scroll-proportion="0.094527364" vertical-offset="13" max-vertical-offset="510">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -98,7 +95,16 @@
       <file leaf-file-name="addon.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/repository.mediaguru/addon.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="71" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="340">
+            <state line="1" column="71" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addon.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/addon.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="8" selection-start="959" selection-end="959" vertical-scroll-proportion="0.51589596" vertical-offset="0" max-vertical-offset="692">
               <folding />
             </state>
           </provider>
@@ -107,7 +113,7 @@
       <file leaf-file-name="media-guru.rss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rss/media-guru.rss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state line="12" column="43" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -136,17 +142,17 @@
         <option value="$PROJECT_DIR$/plugin.program.smartdns/default.py" />
         <option value="$PROJECT_DIR$/rss/media-guru.rss" />
         <option value="$PROJECT_DIR$/plugin.program.smartdns/mg_common.py" />
+        <option value="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
         <option value="$PROJECT_DIR$/addons.xml" />
         <option value="$PROJECT_DIR$/plugin.program.smartdns/addon.xml" />
-        <option value="$PROJECT_DIR$/plugin.program.smartdns/changelog.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="776" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -289,21 +295,21 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="69" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="69" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="69" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="713" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="709" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="73" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="72" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="62" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="61" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="68" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="67" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="726" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="716" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FullScreen" value="false" />
   </component>
@@ -636,11 +642,23 @@
       <created>1439155430058</created>
       <updated>1439155430058</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="New August 2015 Upgrade">
+      <created>1439155443810</created>
+      <updated>1439155443810</updated>
+    </task>
+    <task id="LOCAL-00038" summary="New August 2015 Upgrade">
+      <created>1439155797420</created>
+      <updated>1439155797420</updated>
+    </task>
+    <task id="LOCAL-00039" summary="New August 2015 Upgrade">
+      <created>1439158669790</created>
+      <updated>1439158669790</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -648,12 +666,12 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985073" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32985073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897195" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897195" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20654206" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -896,13 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository.mediaguru/addon.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="71" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/repository.mediaguru/fanart.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -937,18 +948,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons_xml_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="24" selection-start="2702" selection-end="2702" vertical-scroll-proportion="1.0701493" vertical-offset="456" max-vertical-offset="1989" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rss/media-guru.rss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="1330" selection-end="1330" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nbcsn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="5321">
@@ -958,7 +957,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/mg_common.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="33" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.6066838" vertical-offset="2331" max-vertical-offset="6188">
+        <state line="100" column="49" selection-start="3073" selection-end="3073" vertical-scroll-proportion="0.2308642" vertical-offset="1479" max-vertical-offset="6222">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/changelog.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="6" selection-start="361" selection-end="361" vertical-scroll-proportion="0.3304982" vertical-offset="0" max-vertical-offset="823">
           <folding />
         </state>
       </provider>
@@ -970,23 +976,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rss/media-guru.rss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="43" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository.mediaguru/addon.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="71" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons_xml_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="24" selection-start="2702" selection-end="2702" vertical-scroll-proportion="1.0361272" vertical-offset="456" max-vertical-offset="1989">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addons.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state line="2" column="52" selection-start="117" selection-end="117" vertical-scroll-proportion="0.041907515" vertical-offset="5" max-vertical-offset="731">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/addon.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="52" selection-start="108" selection-end="108" vertical-scroll-proportion="0.042288557" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.program.smartdns/changelog.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="17" selection-start="49" selection-end="49" vertical-scroll-proportion="0.094527364" vertical-offset="13" max-vertical-offset="510">
+        <state line="21" column="8" selection-start="959" selection-end="959" vertical-scroll-proportion="0.51589596" vertical-offset="0" max-vertical-offset="692">
           <folding />
         </state>
       </provider>
